@@ -1,0 +1,19 @@
+when@dev:
+    _errors:
+        resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
+        prefix: /_error
+
+app_login:
+    path: '/login'
+    controller: 'App\Controller\SecurityController::login'
+
+
+app_register:
+    path: '/register'
+    controller: 'App\Controller\RegistrationController::register'
+
+
+home: ## nom de la route
+    path: / ## url 
+    controller: App\Controller\HomeController::index
+
